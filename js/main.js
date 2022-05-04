@@ -14,7 +14,7 @@ console.log(user);
  console.log(test);
  test--;
  //20
- console.log(test);
+ console.log(Boolean(test));
   test = String(true);
  //true
   console.log(test);
@@ -37,6 +37,6 @@ for (let i=0; i < arr.length; i++) {
  let arrThree = [2, 3, 5, 8];
  let result = 0;
  for (let i=0; i < arrThree.length; i++) {
-     result = result + arrThree[i]
+     result = result * arrThree[i]
  }
  console.log(result);
