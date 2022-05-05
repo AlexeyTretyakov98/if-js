@@ -29,15 +29,41 @@ console.log(y);
 //     {
 //     }
 // }
-// console.log(palindrome(''))
+ console.log(palindrome(''))
 
 function palindrome(str) {
-  return str == str.split('').reverse().join('');
-}
-console.log(palindrome('шалаш'));
+   return str == str.split('').reverse().join('');
+ }
+ console.log(palindrome('шалаш'));
 
-let nums = [12, 53, 20, 18, 22, 100, 43, 57, 50, 1];
-let str1 = nums.toString();
-str1 = str1.split('0').join('zero');
-let numsNew = str1.split(',');
-console.log(numsNew);
+
+
+
+ function  filter (num) {
+   for (let i = 0; i < num.length; i++) {
+    if (String(num[i]).includes('0')) {
+       num[i] = String(num[i]).replaceAll('0', 'zero');
+     }
+  }
+   return num;
+ }
+ let num = [];
+ for (let i = 0; i < 10; i++) {
+  num[i] = Math.round(Math.random() * 100);
+ }
+
+ filter(num);
+ console.log(num)
+
+
+
+
+
+
+
+
+
+
+
+
+
