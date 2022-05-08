@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write *.js",
-    "Lint": "eslint --debug js/",
+    "prettier": "prettier --write *.html  js/**/*.js",
+    "Lint": "eslint  js/**/*.js/",
     "Lint:write": "eslint --debug js/ --fix"
   },
   "repository": {
