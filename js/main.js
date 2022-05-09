@@ -1,69 +1,46 @@
-let x = min(333, 55);
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else {
-    return b;
-  }
+function sum(numOne, numTwo) {
+  let calcSum = numOne + numTwo;
+  return calcSum;
 }
-console.log(x);
+console.log(sum(5, 2));
 
-let y = max(333, 55);
-function max(a, b) {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
+
+const colors = ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'];
+
+const text1 = document.querySelector('#text1')
+const text2 = document.querySelector('#text2')
+const text3 = document.querySelector('#text3')
+let index1 = 0
+let index2 = 0
+let index3 = 0
+
+text1.addEventListener('click', reColor1)
+text2.addEventListener('click', reColor2)
+text3.addEventListener('click', reColor3)
+
+ function reColor1() {
+    if(index1 === 5) {
+        index1 = 0
+    } else {
+        index1++
+        text1.style.color = colors[index1]
+    }
 }
-console.log(y);
 
-// function palindrome(str){
-//     let str2 = str.split('');
-//     str2 = str2.reverse();
-//     str2 = str2.join('');
-//     if (str == str2) {
-//         return true;
-//     }
-//         else return false;
-//     {
-//     }
-// }
- console.log(palindrome(''))
+function reColor2() {
+    if(index2 === 5) {
+        index2 = 0
+    } else {
+        index2++
+        text2.style.color = colors[index2]
+    }
+}
 
-function palindrome(str) {
-   return str == str.split('').reverse().join('');
- }
- console.log(palindrome('шалаш'));
-
-
-
-
- function  filter (num) {
-   for (let i = 0; i < num.length; i++) {
-    if (String(num[i]).includes('0')) {
-       num[i] = String(num[i]).replaceAll('0', 'zero');
-     }
-  }
-   return num;
- }
- let num = [];
- for (let i = 0; i < 10; i++) {
-  num[i] = Math.round(Math.random() * 100);
- }
-
- filter(num);
- console.log(num)
-
-
-
-
-
-
-
-
-
-
-
-
-
+function reColor3() {
+    if(index3 === 5) {
+        index3 = 0
+    } else {
+        index3++
+        text3.style.color = colors[index3]
+    }
+}
