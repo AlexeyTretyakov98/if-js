@@ -18,7 +18,7 @@ text1.addEventListener('click', reColor1)
 text2.addEventListener('click', reColor2)
 text3.addEventListener('click', reColor3)
 
-function reColor1() {
+ function reColor1() {
     if(index1 === 5) {
         index1 = 0
     } else {
