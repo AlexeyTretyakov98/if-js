@@ -1,69 +1,39 @@
-let x = min(333, 55);
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else {
-    return b;
-  }
+let user = 'John Doe';
+console.log(user);
+
+let student = 'Alexey Tretyakov';
+console.log(student);
+student = user;
+//user
+console.log(user);
+let test = 1;
+test++;
+test = test + '1';
+//21
+console.log(test);
+test--;
+//20
+console.log(Boolean(test));
+test = String(true);
+//true
+console.log(test);
+console.log(typeof test);
+
+let arr = [2, 5, 8, 15, 0, 6, 20, 3];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+        console.log(arr[i]);
+    }
 }
-console.log(x);
-
-let y = max(333, 55);
-function max(a, b) {
-  if (a > b) {
-    return a;
-  } else {
-    return b;
-  }
+let arrTwo = [2, 5, 8, 15, 0, 6, 20, 3];
+for (let i = 0; i < arrTwo.length; i++) {
+    if (arrTwo[i] > 5 && arrTwo[i] < 10) {
+        console.log(arrTwo[i]);
+    }
 }
-console.log(y);
-
-// function palindrome(str){
-//     let str2 = str.split('');
-//     str2 = str2.reverse();
-//     str2 = str2.join('');
-//     if (str == str2) {
-//         return true;
-//     }
-//         else return false;
-//     {
-//     }
-// }
- console.log(palindrome(''))
-
-function palindrome(str) {
-   return str == str.split('').reverse().join('');
- }
- console.log(palindrome('шалаш'));
-
-
-
-
- function  filter (num) {
-   for (let i = 0; i < num.length; i++) {
-    if (String(num[i]).includes('0')) {
-       num[i] = String(num[i]).replaceAll('0', 'zero');
-     }
-  }
-   return num;
- }
- let num = [];
- for (let i = 0; i < 10; i++) {
-  num[i] = Math.round(Math.random() * 100);
- }
-
- filter(num);
- console.log(num)
-
-
-
-
-
-
-
-
-
-
-
-
-
+let arrThree = [2, 3, 5, 8];
+let result = 0;
+for (let i = 0; i < arrThree.length; i++) {
+    result = result * arrThree[i];
+}
+console.log(result);
